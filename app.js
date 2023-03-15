@@ -85,30 +85,26 @@ function verifyVictory() {
 }
 
 function boxChecker(event) {
-  const clickedBox = event.target;
-  clickedBox.innerHTML = "X";
-  turnSwitcher();
+  if (gameState.currentPlayer === 1) {
+    const clickedBox = event.target;
+    console.log(event.target)
+    clickedBox.innerHTML = "X";
+    turnSwitcher();
+  } else {
+    const clickedBox = event.target;
+    console.log(event.target)
+    clickedBox.innerHTML = "O";
+    turnSwitcher();
+  }
 }
-
 function turnSwitcher() {
-  
-
+  if (gameState.currentPlayer === 1) {
+    gameState.currentPlayer = 2
+  } else {
+    gameState.currentPlayer = 1
+  }
 }
 //*********Game (Null / victory/ defeat) *****************/
 
 /******************User actions*****************/
 boxes.forEach((box) => box.addEventListener("click", boxChecker));
-
-//Test of users clicks
-/*
-boxes.forEach((box) => box.addEventListener("click", testClick));
-function testClick () {
-    console.log("Click work")
-}
-
-
-/* Ce que j'ai appris :
-1 - Ce qu'est un forEach et comment l'utiliser.
-2 - Ce qu'est un spread operator et comment l'utiliser. 
-3 - Ce qu'est une node list.(Il s'agit d'une liste issu d'un getElementByClassName)
-*/
