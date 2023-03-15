@@ -98,10 +98,13 @@ function boxChecker(event) {
   }
 }
 function turnSwitcher() {
+
   if (gameState.currentPlayer === 1) {
     gameState.currentPlayer = 2
+    player.innerHTML = "2"
   } else {
     gameState.currentPlayer = 1
+    player.innerHTML = "1"
   }
 }
 //*********Game (Null / victory/ defeat) *****************/
