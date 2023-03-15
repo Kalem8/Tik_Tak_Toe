@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: sans-serif;
+    margin: 2rem;
+}
+
+.borderRed {
+    border: red solid 3px   ;
+}
+#grid {
+    display : grid;
+    grid-template-columns: repeat(3, 5rem);
+    grid-template-rows: repeat(3, 5rem);
+    gap: 1rem;
+    margin: 2rem;
+}
+
+.boxes {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 3rem;
+}
+p {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+p:first-of-type {
+    color: lightgreen;
+}
