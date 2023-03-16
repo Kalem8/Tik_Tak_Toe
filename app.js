@@ -6,7 +6,6 @@ let scorePlayer2 = document.querySelector("#score2");
 let scoreNul = document.querySelector("#scoreNul");
 
 /************** Game data ******************/
-
 let gameState = {
   currentPlayer: 1,
   scorePlayer1: 0,
@@ -81,7 +80,7 @@ function verifyVictory() {
       boxesState.box3 > 0)
   ) {
     return true;
-  }  else if (
+  } else if (
     boxesState.box1 !== 0 &&
     boxesState.box2 !== 0 &&
     boxesState.box3 !== 0 &&
@@ -93,28 +92,47 @@ function verifyVictory() {
     boxesState.box9 !== 0
   ) {
     return null;
-  }  else {
+  } else {
     return false;
   }
 }
 function gameReset() {
   player = 1;
-  (boxesState.box1 = 0),
-    (boxesState.box2 = 0),
-    (boxesState.box3 = 0),
-    (boxesState.box4 = 0),
-    (boxesState.box5 = 0),
-    (boxesState.box6 = 0),
-    (boxesState.box7 = 0),
-    (boxesState.box8 = 0),
-    (boxesState.box9 = 0);
+  boxesState.box1 = 0;
+  boxesState.box2 = 0;
+  boxesState.box3 = 0;
+  boxesState.box4 = 0;
+  boxesState.box5 = 0;
+  boxesState.box6 = 0;
+  boxesState.box7 = 0;
+  boxesState.box8 = 0;
+  boxesState.box9 = 0;
+
+  box1.innerHTML = "";
+  box2.innerHTML = "";
+  box3.innerHTML = "";
+  box4.innerHTML = "";
+  box5.innerHTML = "";
+  box6.innerHTML = "";
+  box7.innerHTML = "";
+  box8.innerHTML = "";
+  box9.innerHTML = "";
 }
 /************Game (Null / victory/ defeat) *****************/
 function victoryAlert() {
   if (verifyVictory() === true) {
+    if (gameState.currentPlayer === 1) {
+      gameState.scorePlayer1++;
+      scorePlayer1.innerHTML++;
+    } else {
+      gameState.scorePlayer1++;
+    }
+
     alert("Gagné");
+    gameReset();
   } else if (verifyVictory() === null) {
     alert("Null");
+    gameReset();
   }
 }
 /******************User actions*****************/
