@@ -9,7 +9,7 @@ body {
     align-items: center;
     flex-direction: column;
     font-family: sans-serif;
-    margin: 2rem;
+    height: 100vh;
 }
 
 .borderRed {

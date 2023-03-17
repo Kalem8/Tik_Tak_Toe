@@ -32,24 +32,22 @@ function boxChecker(event) {
   if (gameState.currentPlayer === 1) {
     clickedBox.innerHTML = "X";
     boxesState[clickedBox.id] = gameState.currentPlayer;
-    turnSwitcher();
     verifyVictory();
-    victoryAlert();
+    turnSwitcher();
   } else {
     clickedBox.innerHTML = "O";
     boxesState[clickedBox.id] = gameState.currentPlayer;
-    turnSwitcher();
     verifyVictory();
-    victoryAlert();
+    turnSwitcher();
   }
 }
 function turnSwitcher() {
   if (gameState.currentPlayer === 1) {
     gameState.currentPlayer = 2;
-    player.innerHTML = "2";
+    player.innerHTML = 2;
   } else {
     gameState.currentPlayer = 1;
-    player.innerHTML = "1";
+    player.innerHTML = 1;
   }
 }
 function verifyVictory() {
@@ -79,7 +77,7 @@ function verifyVictory() {
       boxesState.box5 === boxesState.box7 &&
       boxesState.box3 > 0)
   ) {
-    return true;
+    return victoryAlert(gameState.currentPlayer);
   } else if (
     boxesState.box1 !== 0 &&
     boxesState.box2 !== 0 &&
@@ -91,13 +89,36 @@ function verifyVictory() {
     boxesState.box8 !== 0 &&
     boxesState.box9 !== 0
   ) {
-    return null;
+    return nullAlert();
   } else {
     return false;
   }
 }
+function victoryAlert(winner) {
+  setTimeout(() => {
+    if (winner === 1) {
+      gameState.scorePlayer1++;
+      scorePlayer1.innerHTML++;
+      alert("Player 1 won");
+      gameReset();
+    } else {
+      gameState.scorePlayer2++;
+      scorePlayer2.innerHTML++;
+      alert("Player 2 won");
+      gameReset();
+    }
+  }, 50);
+}
+function nullAlert() {
+  setTimeout(function () {
+    gameState.matchNuls++;
+    scoreNul.innerHTML++;
+    alert("Null");
+    gameReset();
+  }, 50);
+}
 function gameReset() {
-  player = 1;
+
   boxesState.box1 = 0;
   boxesState.box2 = 0;
   boxesState.box3 = 0;
@@ -118,22 +139,6 @@ function gameReset() {
   box8.innerHTML = "";
   box9.innerHTML = "";
 }
-/************Game (Null / victory/ defeat) *****************/
-function victoryAlert() {
-  if (verifyVictory() === true) {
-    if (gameState.currentPlayer === 1) {
-      gameState.scorePlayer1++;
-      scorePlayer1.innerHTML++;
-    } else {
-      gameState.scorePlayer1++;
-    }
 
-    alert("Gagné");
-    gameReset();
-  } else if (verifyVictory() === null) {
-    alert("Null");
-    gameReset();
-  }
-}
 /******************User actions*****************/
 boxes.forEach((box) => box.addEventListener("click", boxChecker));
