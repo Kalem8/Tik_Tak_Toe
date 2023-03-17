@@ -139,6 +139,5 @@ function gameReset() {
   box8.innerHTML = "";
   box9.innerHTML = "";
 }
-
 /******************User actions*****************/
 boxes.forEach((box) => box.addEventListener("click", boxChecker));
