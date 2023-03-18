@@ -7,8 +7,8 @@ This is a simple Tic-Tac-Toe game implemented in JavaScript that can be played i
 - [Overview](#overview)
   - [Screenshot](#screenshot)
 - [My process](#my-process)
-  - [Built with](#built-with)
-  - [What we can learn](#what-i-learned)
+  - [Built process](#built-with)
+  - [What we can learn in this project](#what-we-can-learn-in-this-project)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
@@ -16,7 +16,7 @@ This is a simple Tic-Tac-Toe game implemented in JavaScript that can be played i
 
 ## Overview
 
-This is a JavaScript implementation of the classic game Tic-Tac-Toe. The game is played on a 3x3 grid, and players take turns marking X or O in a cell. The first player to get three in a row wins the game. The code uses the Document Object Model (DOM) to dynamically render the game board and update the game state.
+This is a code explain implementation of the classic game Tic-Tac-Toe. The game is played on a 3x3 grid, and players take turns marking X or O in a cell. The first player to get three in a row wins the game. The code uses the Document Object Model (DOM) to dynamically render the game board and update the game state.
 
 Overall, creating a game like Tic-Tac-Toe can be a great way to learn more about web development, and it's always satisfying to see a functioning game come to life through your code.
 
@@ -25,10 +25,10 @@ Overall, creating a game like Tic-Tac-Toe can be a great way to learn more about
 
 ![Mobile screen](./screenShot/mobile-tictactoe-YunusYildiz.png)
 
-## My process (code explain)
+## My process
 
 
-1 - The code uses an event listener to check if any of the boxes in the game are clicked, and then calls the boxChecker() function.
+1 - The code uses an event code explain to check if any of the boxes in the game are clicked, and then calls the boxChecker() function.
 
 2 - The boxChecker() function checks if the clicked box has already been selected and returns false if it has. 
 If the box hasn't been selected, the function then determines whether to display an "X" or an "O" on the box based on the current player's turn. The function then updates the boxesState object with the current player's number and calls the verifyVictory() and turnSwitcher() functions.
