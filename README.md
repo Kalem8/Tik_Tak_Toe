@@ -8,7 +8,7 @@ This is a simple Tic-Tac-Toe game implemented in JavaScript that can be played i
   - [Screenshot](#screenshot)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
+  - [What we can learn](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
