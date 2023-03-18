@@ -23,26 +23,25 @@ Overall, creating a game like Tic-Tac-Toe can be a great way to learn more about
 
 ### Screenshot
 
-(./screenShot/desktop-tictactoe-YunusYildiz.png)
-(./screenShot/mobile-tictactoe-YunusYildiz.png)
+![Mobile screen](./screenShot/mobile-tictactoe-YunusYildiz.png)
 
 ## My process (code explain)
 
 
-The code uses an event listener to check if any of the boxes in the game are clicked, and then calls the boxChecker() function.
+1 - The code uses an event listener to check if any of the boxes in the game are clicked, and then calls the boxChecker() function.
 
-The boxChecker() function checks if the clicked box has already been selected and returns false if it has. 
+2 - The boxChecker() function checks if the clicked box has already been selected and returns false if it has. 
 If the box hasn't been selected, the function then determines whether to display an "X" or an "O" on the box based on the current player's turn. The function then updates the boxesState object with the current player's number and calls the verifyVictory() and turnSwitcher() functions.
 
-The turnSwitcher() function switches the current player to the other player's turn and updates the currentPlayer variable to reflect the change.
+3 - The turnSwitcher() function switches the current player to the other player's turn and updates the currentPlayer variable to reflect the change.
 
-The verifyVictory() function checks if any of the players have won the game or if the game has ended in a tie. If a player has won the game, the victoryAlert() function is called and the winning player's score is updated. If the game has ended in a tie, the nullAlert() function is called and the number of tie games is updated. Otherwise, the function returns false.
+4 - The verifyVictory() function checks if any of the players have won the game or if the game has ended in a tie. If a player has won the game, the victoryAlert() function is called and the winning player's score is updated. If the game has ended in a tie, the nullAlert() function is called and the number of tie games is updated. Otherwise, the function returns false.
 
-The victoryAlert() function displays a message to the player who won the game and then resets the game board by calling the gameReset() function.
+5 - The victoryAlert() function displays a message to the player who won the game and then resets the game board by calling the gameReset() function.
 
-The nullAlert() function displays a message to the players that the game has ended in a tie and then resets the game board by calling the gameReset() function.
+6 - The nullAlert() function displays a message to the players that the game has ended in a tie and then resets the game board by calling the gameReset() function.
 
-The gameReset() function resets the boxesState object and clears the contents of all the boxes on the game board.
+7 - The gameReset() function resets the boxesState object and clears the contents of all the boxes on the game board.
 
 ### Built with
 
