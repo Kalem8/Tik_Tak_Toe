@@ -1,4 +1,4 @@
-## How I write my TIC TAC TOE game with Functions
+## My TIC TAC TOE game with Functions
 
 This is a simple Tic-Tac-Toe game implemented in JavaScript that can be played in the browser.
 
