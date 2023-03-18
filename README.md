@@ -69,16 +69,18 @@ Add some design UI feature and edit more CSS part.
 
 ### Useful resources
 
-- [Screen Shot tools] (https://chrome.google.com/webstore/detail/gofullpage-full-page-scre/fdpohaocaechififmbbbbbknoalclacl/related) - This an amazing screenShot tool
+- This an amazing screenShot tool - [GoFULLPage Chrome extension](https://chrome.google.com/webstore/detail/gofullpage-full-page-scre/fdpohaocaechififmbbbbbknoalclacl/related) 
 
 ## Author
 
-I am a junior JavaScript developer who is passionate about web development. I am actively seeking job opportunities to further my skills and gain real-world experience. 
+I am a JavaScript developer who is passionate about web development. I am actively seeking job opportunities to further my skills and gain real-world experience. 
 
 If you are interested in hiring a motivated and dedicated junior developer, please don't hesitate to contact me through my LinkedIn account or email at ynsyldz44800@gmail.com. I look forward to hearing from you!
 
-- Youtube chanel- [Yunus Yildiz](https://www.youtube.com/channel/UCHcbGs0_a6xnTPpbkoRaGuw) (Maybe I'll produce some dev stuff on it)
-- Linkedin - https://www.linkedin.com/in/yunus-yildiz-b919b7206/
+- [My Youtube chanel](https://www.youtube.com/channel/UCHcbGs0_a6xnTPpbkoRaGuw) (Maybe I'll produce some dev stuff on it)
+- [My linkedin](https://www.linkedin.com/in/yunus-yildiz-b919b7206/) 
+
+You can also send me questions about my code if something wrong. Thank
 
 ## Acknowledgments
 
