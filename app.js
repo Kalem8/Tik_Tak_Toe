@@ -99,12 +99,12 @@ function victoryAlert(winner) {
     if (winner === 1) {
       gameState.scorePlayer1++;
       scorePlayer1.innerHTML++;
-      alert("Player 1 won");
+      alert("Joueur 1 à gagné");
       gameReset();
     } else {
       gameState.scorePlayer2++;
       scorePlayer2.innerHTML++;
-      alert("Player 2 won");
+      alert("Joueur 1 à gagné");
       gameReset();
     }
   }, 50);
