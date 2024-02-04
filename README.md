@@ -7,7 +7,7 @@ Ceci est un jeu simple de Tic-Tac-Toe implémenté en JavaScript qui peut être 
 
 This is a simple Tic-Tac-Toe game implemented in JavaScript that can be played in the browser.
 
-## Table of contents
+## Table of contents / Sommaire
 
 - [Overview](#overview)
   - [Screenshot](#screenshot)
@@ -17,7 +17,7 @@ This is a simple Tic-Tac-Toe game implemented in JavaScript that can be played i
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
-## Overview
+## Overview / Résumé
 
 
 Voici une explication du code pour l'implémentation du jeu classique Tic-Tac-Toe. Le jeu se joue sur une grille de 3x3, et les joueurs marquent à tour de rôle un X ou un O dans une cellule. Le premier joueur qui aligne trois symboles identiques remporte la partie. Le code utilise le Document Object Model (DOM) pour rendre dynamiquement le plateau de jeu et mettre à jour l'état du jeu.
