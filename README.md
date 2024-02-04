@@ -1,6 +1,6 @@
 ## Mon jeu TIC TAC TOE 
 
-[Dans ce readme je vous explique le process de création de mon code]
+JOUER / PLAY : (https://tik-tak-toe-alpha.vercel.app/)
 
 Ceci est un jeu simple de Tic-Tac-Toe implémenté en JavaScript qui peut être joué dans le navigateur.
 
